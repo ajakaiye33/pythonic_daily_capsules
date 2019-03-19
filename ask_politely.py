@@ -13,7 +13,7 @@ def ask_politely(sentence):
     """
     return 'please?' if the
     sentence ends with a question mark
-    and if the sentence already polite or just a staement
+    and if the sentence is already polite or just a statement
     return the sentence/statement unchanged
     """
     if sentence.endswith('?') and sentence.split()[-1] != 'please?':
