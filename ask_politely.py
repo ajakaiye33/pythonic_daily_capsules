@@ -25,6 +25,8 @@ def ask_politely(sentence):
 
 print(ask_politely("My name is Grace Hopper"))
 
+###########################################
+
 
 # INPUT: askPolitely("May I borrow your pencil?");
 # - OUTPUT: "May I borrow your pencil please?"
