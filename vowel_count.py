@@ -1,8 +1,10 @@
 
 def vowel_count(phrasy):
     """
-    vowelCount(str) that takes a str parameter and returns the number of vowels
-    the string contains (ie. "Fullstack Academy" would return 5)
+    vowelCount(str) that takes a str 
+    parameter and returns
+    the number of vowels
+    the string contains
     """
     counter = 0
     vowel = "aeiou"
