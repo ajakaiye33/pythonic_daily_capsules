@@ -1,3 +1,5 @@
+
+
 def find_vacant_room(room_status_array):
     """
     function returns the index-in a list- of element
