@@ -1,13 +1,42 @@
 
-def card_play(player1_array, player2_array):
-    rank = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A']
-    player1_score = 0
-    playyer2_score = 0
+# def card_play(player1_array, player2_array):
+#     rank = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A']
+#
+#     for rank_ind, rank_element in zip(player1_array, player2_array):
+#         print(rank_ind, rank_element)
+#
+#
+# print(card_play(['K', 'Q', 'J'], ['Q', 'K', 'J']))
+#
+#
+# # rank = ['2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A']
 
-    for level, element in enumerate(rank):
-        if element in player1_array:
-            if element in player2_array:
-                return level
+import timeit
+
+# input_list = range(100)
+#
+#
+# def div_by_five(num):
+#     if num % 5 == 0:
+#         return True
+#     else:
+#         return False
 
 
-print(card_play(['K', 'Q', 'J'], ['Q', 'K', 'J']))
+# # xyz = (i for i in input_list if div_by_five(i))
+# xyz = [i for i in input_list if div_by_five(i)]
+# print(xyz)
+
+print(timeit.timeit('''input_list = range(100)
+
+
+def div_by_five(num):
+    if num % 5 == 0:
+        return True
+    else:
+        return False
+
+
+# xyz = (i for i in input_list if div_by_five(i))
+xyz = [i for i in input_list if div_by_five(i)]
+''', number=50))
