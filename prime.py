@@ -1,6 +1,6 @@
 def prime(num):
     """
-    The function prime(num) accepts a number argument and returns the 
+    The function prime(num) accepts a number argument and returns the
     boolean true if the number is a prime number otherwise it returns false.
     """
 
@@ -11,6 +11,8 @@ def prime(num):
 
 
 print(prime(199))
+
+# from another angle however complex.
 
 
 def factorize():
