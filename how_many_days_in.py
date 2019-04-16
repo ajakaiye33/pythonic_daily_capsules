@@ -30,15 +30,12 @@ def how_many_days_in(month):
     return days
 
 
+# another way
+def how_many_days_in(month):
+    monthanddays = {"January": 31, "February": 28, "March": 30, "April": 30, "May": 31,
+                    "June": 30, "July": 31, "August": 31, "September": 30, "October": 31, "November": 30, "December": 31}
+    return monthanddays[month]
+
+
 print(how_many_days_in("December"))
 print(how_many_days_in("February"))
-
-# another way
-# def how_many_days_in(month):
-#     monthanddays = {"January": 31, "February": 28, "March": 30, "April": 30, "May": 31,
-#                     "June": 30, "July": 31, "August": 31, "September": 30, "October": 31, "November": 30, "December": 31}
-#     return monthanddays[month]
-#
-#
-# print(how_many_days_in("December"))
-# print(how_many_days_in("February"))
