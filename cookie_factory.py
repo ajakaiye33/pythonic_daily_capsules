@@ -1,13 +1,14 @@
 
 class Cookie(object):
 
-    self.cookies = 'cookies'
-
-    def creat_cookies(num):
+    @classmethod
+    def creat_cookies(cls, num):
         combine = []
-        for i in range(1, num):
-            print(combine.append(Cookie.cookies))
+        for i in range(num):
+            combine.append(cls())
+        return combine
 
 
-c = Cookie()
-c.creat_cookies(2)
+van = Cookie.creat_cookies(2)
+
+print(van)
