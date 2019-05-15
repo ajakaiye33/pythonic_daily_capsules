@@ -23,9 +23,7 @@ def eldes_customer(dic):
     inner_chamber = {}
     for i, j in customer.items():
         for u in j:
-            max_cont = max(u)
-
-        midway[i] = max_cont
+            midway[i] = u
     return midway
 
 
