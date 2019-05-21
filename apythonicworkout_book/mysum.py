@@ -60,3 +60,20 @@ def stringy_av(*word_list):
 
 
 print(stringy_av("policy", "politics", "president"))
+
+
+def intey(*p_obj):
+    storky = []
+    for i in p_obj:
+        if type(i) == int:
+            if int(i):
+                storky.append(i)
+            return storky
+
+
+print(intey("34", 56, "good", "100"))
+
+
+foo = "27"
+
+print(int(foo))
