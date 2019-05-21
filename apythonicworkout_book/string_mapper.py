@@ -6,8 +6,10 @@ def string_map(stringy):
     that has words as the keys ans the number of times each word was seen as the values
     """
     maper = {}
-
+    stringy = stringy.strip(",")
+    stringy = stringy.strip("!")
     split_string = stringy.split()
+
     for i in split_string:
         maper[i.lower()] = split_string.count(i)
     return maper
