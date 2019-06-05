@@ -2,9 +2,13 @@
 def anagram(wrd1, wrd2):
     """
     Recives two strings and return True if the two are anagram and false if Otherwise
+    also adjust for when the string is with capital letters and spaces
     """
+    wrd1 = wrd1.strip()
+    wrd2 = wrd2.strip()
     wrd1 = wrd1.upper()
     wrd2 = wrd2.upper()
+
     spt_w1 = list(wrd1)
     spt_w2 = list(wrd2)
     if len(spt_w1) == len(spt_w2):
@@ -13,7 +17,7 @@ def anagram(wrd1, wrd2):
         return False
 
 
-print(anagram("tea", "Eat"))
+print(anagram("tea", " Eat"))
 print(anagram("skin", "sinks"))
 print(anagram("Listen", "silent"))
 print(anagram("tea", "treat"))
