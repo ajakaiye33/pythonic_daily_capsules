@@ -39,3 +39,33 @@ def plus_minus(lsty):
 
 
 print(plus_minus([10, 20, 30, 40, 50, 60]))
+
+# Bonus
+
+
+def myzip(ls1, ls2):
+    """
+    Emulate the built-in zip function, that takes any number of iterables and return
+    a list of tuple
+    """
+    fr = []
+    for i in range(len(ls1)):
+        fr.append((ls1[i], ls2[i]))
+    return fr
+
+
+print(myzip([10, 20, 30], "abc"))
+
+
+def to_letters(ls):
+    """
+    Receives a list which contains any number of elements of any type. Modify this
+    list such that it contains six elements, each of which is the letter "a"
+    """
+    com = []
+    for i in ls[0:7]:
+        com.append("a")
+    return com
+
+
+print(to_letters([1, 2, 3, 4, 5, 6, 7, 8, 10]))
