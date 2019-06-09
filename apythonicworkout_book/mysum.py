@@ -75,12 +75,39 @@
 
 
 def infiny(*items):
-    addy = 0
+    result = items[0]
 
-    for i in items:
-        for j in i:
-            addy += j
-        return addy
+    if not items:
+        return items
+    result = items[0]
+    for item in items[1:]:
+        result += item
+    return result
+
+    # addy = 0
+    #
+    # for i in items:
+    #     for j in i:
+    #         addy += j
+    #     return addy
 
 
-print(infiny([1, 2, 3], [4, 5, 6]))
+print(infiny([1, 2, 3], [4, 5, 6], [7, 8, 9]))
+print(infiny("abc", "def" "ghi"))
+print(infiny(1, 2, 3))
+
+# Additional Bonus problems
+
+
+def mysum_bigger_than(*anythings):
+    """
+    """
+    result = anythings[0]
+    for i in anythings[1:]:
+        if i > anythings[0]:
+            result += i
+    return result
+
+
+print(mysum_bigger_than(10, 5, 20, 30, 6))
+print(mysum_bigger_than("a", "b", "c", "d", "e"))
