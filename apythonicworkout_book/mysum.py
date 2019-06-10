@@ -14,7 +14,7 @@ def mysum(*args):
 
 print(mysum(1, 2, 3))
 print(mysum(10, 20, 30, 40, 50))
-#print(mysum([1, 2, 3]))
+# print(mysum([1, 2, 3]))
 
 
 # Bonus
@@ -75,7 +75,6 @@ print(intey("34", 56, "good", "100"))
 
 
 def infiny(*items):
-    result = items[0]
 
     if not items:
         return items
@@ -102,6 +101,9 @@ print(infiny(1, 2, 3))
 def mysum_bigger_than(*anythings):
     """
     """
+    if not anythings:
+
+        return anythings
     result = anythings[0]
     for i in anythings[1:]:
         if i > anythings[0]:
@@ -111,3 +113,22 @@ def mysum_bigger_than(*anythings):
 
 print(mysum_bigger_than(10, 5, 20, 30, 6))
 print(mysum_bigger_than("a", "b", "c", "d", "e"))
+print(mysum_bigger_than([]))
+
+
+def sume_numeric(*dyst):
+    """
+    receives a tuple or list of values if the values can be converted to integers
+    they should be sumed up and returned.
+    """
+    if not dyst:
+        return dyst
+    res = 0
+    des = int(dyst[3])
+    for i in dyst:
+        if isinstance(i, int):
+            des += i
+    return des
+
+
+print(sume_numeric(10, 20, "a", "30", "bcd"))
