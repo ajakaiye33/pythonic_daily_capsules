@@ -10,10 +10,10 @@
 #                     ('Vladimir', 'Putin', 3.626),
 #                     ('Jinpinq', 'Xi', 10.603)]))
 #
-# # alternate solution
-# for person in sorted(people, key=operator.itemgetter(1, 0)):
-#     print("{1: 10} {0: 10}
-#           {2: 5.2f}").format(*person)
+# alternate solution
+for person in sorted(people, key=operator.itemgetter(1, 0)):
+    print("{1: 10} {0: 10}
+          {2: 5.2f}").format(*person)
 
 matrix1 = [[1, -2], [-3, 4]]
 matrix2 = [[2, -1], [0, -1]]
