@@ -31,10 +31,13 @@ def pig_it(stringy):
     of the word. Leave punctuation marks untouched.Examples
     pig_it('Pig latin is cool') # igPay atinlay siay oolcay
     pig_it('Hello world !')     # elloHay orldway !"""
-    dey = ''
+    dey = []
     ass = stringy.split()
-    for i, j in enumerate(ass):
-        print(j[1:] + j[0] + "ay")
+    for j in ass:
+        if len(j) > 1:
+            dey.append(j[1:] + j[0] + "ay")
+    return " ".join(dey)
 
 
 print(pig_it('Pig latin is cool'))
+print(pig_it('Hello world !'))
