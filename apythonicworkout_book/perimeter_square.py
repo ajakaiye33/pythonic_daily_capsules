@@ -24,14 +24,17 @@
 
 
 def duplicate_encode(stringy):
-    dey = ''
-    lty = list(stringy)
+    dey = []
+    lifey = stringy.lower()
+    lty = list(lifey)
     for ind, vay in enumerate(lty):
         if lty.count(vay) > 2:
-            print(")")
-        else:
-            print("(")
+            dey.append(")")
+        elif lty.count(vay) <= 2:
+            dey.append("(")
+    return "".join(dey)
 
 
 print(duplicate_encode("din"))
 print(duplicate_encode("recede"))
+print(duplicate_encode("Success"))
