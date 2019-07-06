@@ -13,8 +13,8 @@ print(human_time(86399))
 print(human_time(359999))
 
 
-# def doo(sil):
-#     return time.strftime("%H:%M:%S", time.gmtime(sil))
-#
-#
-# print(doo(359999))
+def doo(sil):
+    return time.strftime("%0H:%M:%S", time.gmtime(sil))
+
+
+print(doo(359999))
