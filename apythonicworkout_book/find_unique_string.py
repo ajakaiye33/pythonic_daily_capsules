@@ -1,10 +1,15 @@
-def unique_string(stringy):
-    for i in range(len(stringy)):
-        doo = stringy[i]
-        for j in doo:
-            if doo.count(j) > 1:
-                foo = stringy[i]
-    return foo
+from collections import defaultdict
+
+
+def unique_string(a):
+    d = {}
+    c = defaultdict(int)
+    for e in a:
+        t = frozenset(e.strip().lower())
+        d[t] = e
+        c[t] += 1
+
+    return d[next(filter(lambda k: c[k] == 1, c))]
 
 
 print(unique_string(['Aa', 'aaa', 'aaaaa', 'BbBb', 'Aaaa', 'AaAaAa', 'a']))
