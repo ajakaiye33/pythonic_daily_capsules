@@ -1,22 +1,40 @@
+#
+#
+# def valid_solution(board):
+#     for i in hoo:
+#         if 0 in i:
+#             return True
+#     return False
+#
+#
+# hoo = [
+#     [5, 3, 4, 6, 7, 8, 9, 1, 2],
+#     [6, 7, 2, 1, 9, 5, 3, 4, 8],
+#     [1, 9, 8, 3, 4, 2, 5, 6, 7],
+#     [8, 5, 9, 7, 6, 1, 4, 2, 3],
+#     [4, 2, 6, 8, 5, 3, 7, 9, 1],
+#     [7, 1, 3, 9, 2, 4, 8, 5, 6],
+#     [9, 6, 1, 5, 3, 7, 2, 8, 4],
+#     [2, 8, 7, 4, 1, 9, 6, 3, 5],
+#     [3, 4, 5, 2, 1, 6, 1, 7, 9]
+# ]
+#
+# print(valid_solution(hoo))
 
 
-def valid_solution(board):
-    for i in hoo:
-        if 0 in i:
-            return True
-    return False
+# "()"              =>  true
+# ")(()))"          =>  false
+# "("               =>  false
+# "(())((()())())"  =>
 
 
-hoo = [
-    [5, 3, 4, 6, 7, 8, 9, 1, 2],
-    [6, 7, 2, 1, 9, 5, 3, 4, 8],
-    [1, 9, 8, 3, 4, 2, 5, 6, 7],
-    [8, 5, 9, 7, 6, 1, 4, 2, 3],
-    [4, 2, 6, 8, 5, 3, 7, 9, 1],
-    [7, 1, 3, 9, 2, 4, 8, 5, 6],
-    [9, 6, 1, 5, 3, 7, 2, 8, 4],
-    [2, 8, 7, 4, 1, 9, 6, 3, 5],
-    [3, 4, 5, 2, 1, 6, 1, 7, 9]
-]
-
-print(valid_solution(hoo))
+doo = "hi())("
+open = '('
+close = ')'
+twin = open + close
+frst = doo.count('(')
+scd = doo.count(')')
+numtwin = doo.count(twin)
+print(frst)
+print(scd)
+print(numtwin)
