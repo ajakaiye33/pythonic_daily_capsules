@@ -6,8 +6,8 @@ def root(a, b, c):
     """
 
     d = (b*b - 4 * a * c)**0.5
-    x_1 = -b - d/(2*a)
-    x_2 = -b + d/(2*a)
+    x_1 = -b + d/(2*a)
+    x_2 = -b - d/(2*a)
 
     print("x_1 = {}".format(x_1))
     print("x_2 = {}".format(x_2))
